@@ -44,7 +44,6 @@ def load_ranges(doc_id, ranges):
         with urllib.request.urlopen(req, cafile=certifi.where()) as response:
             data = response.read()
             print("Status code:", response.getcode())  # 200
-            data = response.read()
             print(data.decode('utf-8'))
     except urllib.error.HTTPError as e:
         print("HTTP error code:", e.code)      # eg: 403, 404
