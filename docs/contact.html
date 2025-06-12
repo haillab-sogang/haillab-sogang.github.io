@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179540919-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-179540919-1');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="/assets/images/logo.png">
+    <link rel="stylesheet" href="/assets/styles/index.css">
+    <link rel="stylesheet" href="/assets/styles/header.css">
+    <link rel="stylesheet" href="/assets/styles/screen.css">
+    <link rel="stylesheet" href="/assets/styles/footer.css">
+    <title>HAIL Lab.</title>
+    
+    
+</head>
+
+<body>
+    
+    <header class="header" :class="{ 'header-scrolled': scrolled  }" id="header">
+    <div class="header-content">
+        <a href="/">
+            <div class="logo">
+                <!-- <div class="logo-drawing-container">
+                    <div class="logo-drawing" ref="logo"></div>
+                </div> -->
+                <div class="logo-text pre-wrap">HAIL Lab</div>
+            </div>
+        </a>
+        <div class="header-menu">
+            <a class="header-menu-item" href="/">
+                Home
+            </a>
+            <a class="header-menu-item" href="/members">
+                Members
+            </a>
+            <a class="header-menu-item" href="/research">
+                Research
+            </a>
+            <a class="header-menu-item" href="/links">
+                Links
+            </a>
+            <a class="header-menu-item" href="/contact">
+                Contact
+            </a>
+        </div>
+    </div>
+</header>
+    <div class="main">
+        
+<div class="contact home">
+    
+    <section class="screen" style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/assets/images/backgrounds/whatsapp.jpg)">
+    <div class="content">
+        <h2>Contact</h2><br />
+        <small>HAIL Lab. @ Sogang University</small>
+    </div>
+</section>
+    
+    <div class="row">
+        <div class="container">
+            <div class="contact v-padded">
+                <h3 class="row-title">Address</h3>
+                <div class="text pre-wrap">K334, Sogang University, 35 Baekbeom-ro, Mapo-gu, Seoul 04107, South Korea</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="contact v-padded">
+                <h3 class="row-title">Map</h3>
+                <iframe 
+                    class="map-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.213205921025!2d126.93748207750549!3d37.5500403250713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98bc526eeb19%3A0x64853caa3a841c2b!2z7ISc6rCV64yA7ZWZ6rWQIOq5gOuMgOqxtOq0gA!5e0!3m2!1sko!2skr!4v1749713040411!5m2!1sko!2skr"
+                    frameborder="0" 
+                    allowfullscreen=""
+                ></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-item">
+                <div class="footer-text">
+                    &copy; Copyright <span id="footer-year">2020</span> | HAIL Lab.
+                </div>
+                <div class="footer-text pre-wrap">K334, Sogang University, 35 Baekbeom-ro, Mapo-gu, Seoul 04107, South Korea</div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-text">
+                    <a href="https://github.com/haillab-sogang/hailab-sogang.github.io">
+                        Repository for this Website
+                    </a>
+                    &nbsp;|&nbsp;
+                    <a href="https://docs.google.com/spreadsheets/d/1d6JnxAHQg8DLUq7Jh4lB5dvcH8Exy7duHRTXK6MTf94/edit?gid=2105215195#gid=2105215195">
+                        Edit Content
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('footer-year').innerHTML = (new Date()).getFullYear();
+    </script>
+</footer>
+    
+    <script src="/assets/scripts/index.js"></script>
+</body>
+
+</html>
