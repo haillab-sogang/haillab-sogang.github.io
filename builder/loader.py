@@ -40,8 +40,18 @@ def load_ranges(doc_id, ranges):
     url = '%s/%s/values:batchGet?%s&key=%s' % (SHEETS_URL_BASE, doc_id, params, config.API_KEY)
 
     req = urllib.request.Request(url)
-    with urllib.request.urlopen(req, cafile=certifi.where()) as response:
-        data = response.read()
+    try:
+        with urllib.request.urlopen(req, cafile=certifi.where()) as response:
+            data = response.read()
+            print("Status code:", response.getcode())  # 200
+            data = response.read()
+            print(data.decode('utf-8'))
+    except urllib.error.HTTPError as e:
+        print("HTTP error code:", e.code)      # eg: 403, 404
+        print("Reason:", e.reason)
+    except urllib.error.URLError as e:
+        print("URL error:", e.reason)          # DNS error, connection failure, etc.
+
     data_dict = json.loads(data)
     return [r['values'] for r in data_dict['valueRanges']]
 
