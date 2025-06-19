@@ -95,7 +95,7 @@
             research: {{ data.research | jsonify | safe }},
             tags: {{ data.tags | jsonify | safe }},
             activeTagId: null,
-        },
+            },
         methods: {
             isHidden: function(tags) {
                 return (this.activeTagId !== null) && !tags.includes(this.activeTagId)
