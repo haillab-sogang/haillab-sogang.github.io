@@ -2,12 +2,12 @@
 
 :root {
     /* Colors */
-    --main-color: #504B43;
+    --main-color: #52357B; /* #861f1d; #504B43*/
     --text-color: #222222;
     --link-color: #C97C5D;
     --white-color: #ffffff;
     --light-grey-color: #f8f8f8;
-    --grey-color: #444444;
+    --grey-color: #444444; 
     --header-text-color: rgba(255, 255, 255, 0.7);
     --header-text-highlight-color: #ffffff;
     --header-border-color: rgba(255, 255, 255, 0.15);
