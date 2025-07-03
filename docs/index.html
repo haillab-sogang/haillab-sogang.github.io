@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '');
+    </script>
+    -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="/assets/images/logo.png">
+    <link rel="stylesheet" href="/assets/styles/index.css">
+    <link rel="stylesheet" href="/assets/styles/header.css">
+    <link rel="stylesheet" href="/assets/styles/screen.css">
+    <link rel="stylesheet" href="/assets/styles/footer.css">
+    <title>Human-centered AI and Language for All</title>
+    
+    
+</head>
+
+<body>
+    
+    <header class="header" :class="{ 'header-scrolled': scrolled  }" id="header">
+    <div class="header-content">
+        <a href="/">
+            <div class="logo">
+                <!-- <div class="logo-drawing-container">
+                    <div class="logo-drawing" ref="logo"></div>
+                </div> -->
+                <div class="logo-text pre-wrap">HAILO Lab</div>
+            </div>
+        </a>
+        <div class="header-menu">
+            <a class="header-menu-item" href="/">
+                Home
+            </a>
+            <a class="header-menu-item" href="/members">
+                Members
+            </a>
+            <a class="header-menu-item" href="/research">
+                Research
+            </a>
+            <a class="header-menu-item" href="/links">
+                Links
+            </a>
+            <a class="header-menu-item" href="/contact">
+                Contact
+            </a>
+        </div>
+    </div>
+</header>
+    <div class="main">
+        
+<div class="home">
+    <section 
+        class="screen screen-large"
+        style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/assets/images/backgrounds/people-hands.jpg)"
+    >
+        <div class="content">
+            <h1>Human-centered AI and Language for All @ Sogang University</h1><br />
+            <small>😇✨</small>
+        </div>
+    </section>
+    
+    
+    <div class="row">
+        <div class="container">
+            <div class="latest v-padded">
+                <h3 class="row-title">Latest Publications</h3>
+                
+                <div class="research-item row-item">
+                    <div class="title-row">
+                        <h4 class="title">Code-Switching Curriculum Learning for Multilingual Transfer in LLMs</h4>
+                        <template v-for="tagId in item.tags">
+                            <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
+                                [[ tags[tagId].tag ]]
+                            </div>
+                        </template>                    
+                    </div>
+                    <div class="authors">Haneul Yoo, Cheonbok Park, Sangdoo Yun, Alice Oh, Hwaran Lee</div>
+                    <div class="booktitle">ACL Findings, 2025</div>
+                    <div class="link-buttons link-buttons-small">
+                        <p><a href="https://arxiv.org/abs/2411.02460">Preprint</a></p>
+                    </div>
+                </div>
+                
+                <div class="research-item row-item">
+                    <div class="title-row">
+                        <h4 class="title">CSRT: Evaluation and Analysis of LLMs using Code-Switching Red-Teaming Dataset</h4>
+                        <template v-for="tagId in item.tags">
+                            <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
+                                [[ tags[tagId].tag ]]
+                            </div>
+                        </template>                    
+                    </div>
+                    <div class="authors">Haneul Yoo, Yongjin Yang, Hwaran Lee</div>
+                    <div class="booktitle">ACL, 2025</div>
+                    <div class="link-buttons link-buttons-small">
+                        <p><a href="https://arxiv.org/abs/2406.15481">Preprint</a></p>
+                    </div>
+                </div>
+                
+                <div class="research-item row-item">
+                    <div class="title-row">
+                        <h4 class="title">AdvisorQA: Towards Helpful and Harmless Advice-seeking Question Answering with Collective Intelligence</h4>
+                        <template v-for="tagId in item.tags">
+                            <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
+                                [[ tags[tagId].tag ]]
+                            </div>
+                        </template>                    
+                    </div>
+                    <div class="authors">Minbeom Kim, Hwanhee Lee, Joonsuk Park, Hwaran Lee, Kyomin Jung</div>
+                    <div class="booktitle">NAACL, 2025</div>
+                    <div class="link-buttons link-buttons-small">
+                        <p><a href="https://aclanthology.org/2025.naacl-long.333/">PDF</a></p>
+                    </div>
+                </div>
+                
+                <div class="research-item row-item">
+                    <div class="title-row">
+                        <h4 class="title">MAQA: Evaluating Uncertainty Quantification in LLMs Regarding Data Uncertainty</h4>
+                        <template v-for="tagId in item.tags">
+                            <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
+                                [[ tags[tagId].tag ]]
+                            </div>
+                        </template>                    
+                    </div>
+                    <div class="authors">Yongjin Yang, Haneul Yoo, Hwaran Lee</div>
+                    <div class="booktitle">NAACL Findings, 2025</div>
+                    <div class="link-buttons link-buttons-small">
+                        <p><a href="https://aclanthology.org/2025.findings-naacl.325/">PDF</a></p>
+                    </div>
+                </div>
+                
+                <div class="research-item row-item">
+                    <div class="title-row">
+                        <h4 class="title">Guaranteed Generation from Large Language Models</h4>
+                        <template v-for="tagId in item.tags">
+                            <div class="tag" v-if="tagId in tags" :key="tagId" :style="{ backgroundColor: tags[tagId].color }">
+                                [[ tags[tagId].tag ]]
+                            </div>
+                        </template>                    
+                    </div>
+                    <div class="authors">Minbeom Kim, Thibaut Thonet, Jos Rozen, Hwaran Lee, Kyomin Jung, Marc Dymetman</div>
+                    <div class="booktitle">ICLR, 2025</div>
+                    <div class="link-buttons link-buttons-small">
+                        <p><a href="https://openreview.net/pdf?id=8roRgrjbjv">PDF</a></p>
+                    </div>
+                </div>
+                
+                <div class="link-buttons link-buttons-large">
+                    <a class="more-button" href="/research.html">See All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+    </div>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-item">
+                <div class="footer-text">
+                    &copy; Copyright <span id="footer-year">2020</span> | Human-centered AI and Language for All
+                </div>
+                <div class="footer-text pre-wrap">K334, Sogang University, 35 Baekbeom-ro, Mapo-gu, Seoul 04107, South Korea</div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-text">
+                    <a href="https://github.com/haillab-sogang/hailab-sogang.github.io">
+                        Repository for this Website
+                    </a>
+                    &nbsp;|&nbsp;
+                    <a href="https://docs.google.com/spreadsheets/d/1d6JnxAHQg8DLUq7Jh4lB5dvcH8Exy7duHRTXK6MTf94/edit?gid=2105215195#gid=2105215195">
+                        Edit Content
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('footer-year').innerHTML = (new Date()).getFullYear();
+    </script>
+</footer>
+    
+    <script src="/assets/scripts/index.js"></script>
+</body>
+
+</html>
